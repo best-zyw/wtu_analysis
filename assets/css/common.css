@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #3D3D3D;
+}
+
+.clear:after {
+  clear: both;
+  content: "";
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+.container header {
+  height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: 4px solid #5A909E;
+  box-shadow: 0px 10px 7px -7px #979797;
+}
+.container header .more {
+  display: none;
+}
+.container header .nav_logo {
+  margin-left: 124px;
+}
+.container header .nav_logo a {
+  display: flex;
+  align-items: center;
+}
+.container header .nav_logo a img {
+  width: 46px;
+}
+.container header .nav_logo a .nav_title {
+  margin-left: 16px;
+}
+.container header .nav_logo a .nav_title .ch {
+  font-size: 24px;
+  color: #484848;
+}
+.container header .nav_logo a .nav_title .en {
+  font-size: 12px;
+  color: #5C5C5C;
+  font-weight: 300;
+}
+.container header .nav {
+  margin-right: 150px;
+}
+.container header .nav ul li {
+  float: left;
+  position: relative;
+}
+.container header .nav ul li a {
+  color: #7E7E7E;
+  font-size: 14px;
+  display: inline-block;
+  width: 96px;
+  height: 78px;
+  line-height: 78px;
+  text-align: center;
+  padding: 8px 0;
+}
+.container header .nav ul li a:hover {
+  color: #494E69;
+  font-size: 18px;
+}
+.container header .nav ul li .child {
+  top: 90px;
+  left: -28px;
+  background: #fff;
+  display: none;
+  position: absolute;
+  width: 144px;
+  border-bottom: 4px solid #5A909E;
+  box-shadow: 6px 0 8px -8px #7E7E7E, -6px 0 8px -8px #7E7E7E;
+  z-index: 9999999;
+}
+.container header .nav ul li .child .blank {
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-top: 11px solid #5A909E;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+.container header .nav ul li .child ul {
+  margin: 20px 0 30px 0;
+}
+.container header .nav ul li .child ul li {
+  text-align: center;
+}
+.container header .nav ul li .child ul li a {
+  font-size: 14px;
+  color: #7E7E7E;
+  display: block;
+  width: 137px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-left: 3px;
+}
+.container header .nav ul li .child ul li a:hover {
+  background: #ECECEC;
+}
+.container header .nav_search {
+  position: absolute;
+  right: 110px;
+  width: 23px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+}
+.container header .nav_search input {
+  display: none;
+  outline: 0px;
+  position: absolute;
+  width: 715px;
+  height: 49px;
+  border: 1px solid #D5D5D5;
+  right: 0px;
+  top: 82px;
+  z-index: 999999;
+  padding-left: 12px;
+  font-weight: 300;
+  font-size: 19px;
+  box-sizing: border-box;
+}
+.container header .nav_search img {
+  width: 23px;
+  height: 23px;
+}
+.container .banner {
+  height: 431px;
+  background: url(../img/banner.jpg);
+  background-size: cover;
+}
+.container footer {
+  height: 220px;
+  background-color: #5A909E;
+  margin-top: 15px;
+  color: #fff;
+  font-size: 14px;
+}
+.container footer .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container footer .content img {
+  width: 250px;
+  margin-top: 38px;
+}
+.container footer .content .copyright {
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .container header {
+    height: 57px;
+  }
+  .container header .nav {
+    display: none;
+    position: absolute;
+    top: 57px;
+    z-index: 9999999;
+    box-shadow: 0px 15px 20px -15px #ddd;
+    width: 100vw;
+    height: 570px;
+    background: #eeeeee;
+  }
+  .container header .nav > ul {
+    width: 50%;
+    position: absolute;
+    background: white;
+    right: 0;
+    height: 100%;
+  }
+  .container header .nav > ul > li {
+    float: none;
+    position: static;
+  }
+  .container header .nav > ul > li:first-child {
+    margin-top: 26px;
+  }
+  .container header .nav > ul > li:first-child > a div {
+    display: block;
+  }
+  .container header .nav > ul > li:first-child .child {
+    display: block;
+  }
+  .container header .nav > ul > li > a {
+    position: relative;
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    font-size: 20px !important;
+    color: #484848;
+  }
+  .container header .nav > ul > li > a:hover {
+    font-weight: bolder;
+    color: #3D3D3D;
+  }
+  .container header .nav > ul > li > a div {
+    display: none;
+    content: " ";
+    position: absolute;
+    right: 84%;
+    top: 15px;
+    width: 11px;
+    height: 11px;
+    background-color: #5A909E;
+  }
+  .container header .nav > ul > li .child {
+    border-bottom: none;
+    position: absolute;
+    background: none;
+    box-shadow: none;
+    left: -87%;
+    top: 0%;
+  }
+  .container header .nav > ul > li .child .blank {
+    display: none;
+  }
+  .container header .nav > ul > li .child ul {
+    margin: 20px 0 30px 0;
+  }
+  .container header .nav > ul > li .child ul li a {
+    font-size: 18px;
+    color: #3D3D3D;
+    height: 36px;
+    line-height: 36px;
+  }
+  .container header .nav_search {
+    display: none;
+  }
+  .container header .nav_logo {
+    margin-left: 20px;
+  }
+  .container header .nav_logo a img {
+    width: 32px;
+  }
+  .container header .nav_logo a .nav_title .ch {
+    font-size: 16px;
+  }
+  .container header .nav_logo a .nav_title .en {
+    font-size: 8px;
+    transform: scale(0.7);
+    margin-left: -50px;
+  }
+  .container header .more {
+    display: block;
+    position: absolute;
+    right: 18px;
+    top: 18px;
+  }
+  .container header .more img {
+    width: 18px;
+  }
+  .container .banner {
+    height: 124px;
+  }
+  .container footer {
+    font-size: 14px;
+    height: 205px;
+    text-align: center;
+  }
+  .container footer .content div {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=common.css.map */

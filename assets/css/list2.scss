@@ -1,0 +1,46 @@
+.heading {
+  background: #5A909E;
+
+  ul {
+    margin-left: 148px;
+    height: 72px;
+    line-height: 72px;
+
+    li {
+      float: left;
+      color: white;
+      margin-left: 12px;
+      font-size: 18px;
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
+.paging{
+  display: flex;
+  justify-content: center;
+  .pagination{
+    display: flex;
+    justify-content: center;
+    li{
+      margin: 5px 10px;
+      padding: 0 3px;
+      border: 1px black solid;
+    }
+  }
+}
+.carousel{
+  margin: 40px 120px 0 120px;
+li{
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  padding-bottom: 15px;
+  img{
+    width: 287px;
+    height: 200px;
+  }
+}
+}

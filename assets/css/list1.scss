@@ -1,0 +1,110 @@
+.heading {
+  background: #5A909E;
+
+  ul {
+    margin-left: 148px;
+    height: 72px;
+    line-height: 72px;
+
+    li {
+      float: left;
+      color: white;
+      margin-left: 12px;
+      font-size: 18px;
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
+.paging{
+  display: flex;
+  justify-content: center;
+  .pagination{
+    display: flex;
+    justify-content: center;
+    li{
+      margin: 5px 10px;
+      padding: 0 3px;
+      border: 1px black solid;
+    }
+  }
+}
+.text-list{
+  margin: 58px 144px 0 120px;
+  .heading{
+    width: 588px;
+    height: 49px;
+    background: rgba(90, 144, 158, 0.2);
+    h1{
+      float: left;
+      margin-top: 10px;
+      margin-left: 26px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #4A4A4A;
+    }
+    .en{
+      float: left;
+      color: #4A4A4A;
+      font-size: 18px;
+      font-weight: 300;
+      margin-left: 28px;
+      margin-top: 11px;
+    }
+    .more{
+      float: right;
+      margin-top: 14px;
+      margin-right: 18px;
+    }
+  }
+  ul{
+    li{
+      display: flex;
+      flex-direction: column;
+      margin-top: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px dashed transparent;
+      background: linear-gradient(white,white) padding-box,
+      repeating-linear-gradient(-45deg,#5A909E 0, #5A909E 0.25em,white 0,white 0.75em);
+      .data{
+        font-size: 12px;
+        margin-bottom: 12px;
+      }
+      .list-group{
+        display: flex;
+        justify-content: space-between;
+        img{
+          width: 240px;
+          height: 148px;
+        }
+        div{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          color: #3D3D3D;
+          width: 884px;
+          .title{
+            width: 295px;
+            font-size: 22px;
+            color: #3D3D3D;
+            margin-right: 12px;
+            margin-top: 18px;
+            align-items: flex-start;
+          }
+          a{
+            background: #E77C34;
+            color: white;
+            font-weight: 300;
+            font-size: 12px;
+            padding: 5px 10px;
+            box-shadow: -2px 2px 6px #ddd;
+            margin: 0 20px 21px 0;
+          }
+        }
+      }
+    }
+  }
+}
