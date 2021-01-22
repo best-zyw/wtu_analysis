@@ -52,4 +52,21 @@
   background: linear-gradient(white, white) padding-box, repeating-linear-gradient(-45deg, #5A909E 0, #5A909E 0.25em, white 0, white 0.75em);
 }
 
+@media screen and (max-width: 768px) {
+  .heading > ul {
+    height: 49px;
+    margin: 0;
+    display: flex;
+  }
+  .heading > ul > li {
+    height: 49px;
+    line-height: 49px;
+    font-size: 12px;
+  }
+
+  .detail {
+    margin: 0 10px;
+  }
+}
+
 /*# sourceMappingURL=list-detail.css.map */

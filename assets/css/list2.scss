@@ -44,3 +44,33 @@ li{
   }
 }
 }
+@media screen and (max-width: 768px){
+  .heading{
+    >ul{
+      height: 49px;
+      margin: 0;
+      display: flex;
+      >li{
+        height: 49px;
+        line-height: 49px;
+        font-size: 12px;
+      }
+    }
+  }
+  .carousel{
+    margin: 24px 0;
+    padding: 0 24px;
+    li{
+      &:nth-child(2n+1) {
+        margin-right: 16px;
+      }
+      width: calc(50% - 8px);
+      margin-top: 6px;
+      height: 135px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
